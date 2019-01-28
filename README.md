@@ -14,7 +14,7 @@ docker run \
 	--detach \
 	--env "SSH_KEY=<ssh public key>"
 	--publish "22:22" \
-	"mireiawen/borg-backup"
+	"solteqmagento/borg-backup"
 ```
 
 Run this container by using a volume mount of the local directory to store the backups on local disk,
@@ -24,5 +24,5 @@ docker run \
 	--detach \
 	--publish "22:22" \
 	--volume "/path/to/backups:/home/borgbackup"
-	"mireiawen/borg-backup"
+	"solteqmagento/borg-backup"
 ```
